@@ -1,0 +1,1 @@
+This is a simple frontend web development project By me and my three teammates Jeevesh,Harpreet and Aayush. This is a website made for an NGO which main aim is to take food from volunteers and then distribute it amongst the needy and it is completely non profit organisation.
