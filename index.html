@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nai Shuruwat-Home</title>
+    <link rel="stylesheet" href="help.css">
+    <style>
+        .navbars{
+            display:none;
+            border:2px solid black;
+            position:fixed;
+            top:64px;
+            right:30px;
+            padding:30px;
+            z-index:25;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-weight: 400;
+            
+
+            
+        }
+        .navbars li{
+            list-style: none;;
+            font-size: larger;
+            margin-top:6px;
+            margin-bottom: 6px;;
+            
+        }
+        .navbars a{
+            text-decoration: none;
+            color:rgb(250, 249, 249);
+
+        }
+        .navbars a:hover{
+            text-decoration: underline;
+            color:rgb(243, 188, 9);
+
+        }
+        .button2>button{
+            display: none;;
+            width:56px;
+            height:36px;
+            border-radius: 16px;;
+            margin-top: 16px;;
+            
+
+        }
+        #about{
+            padding:10px;
+            width:160px;
+            height:73px;
+            color:white;
+            background-color: rgba(0, 0, 0, 0.707);
+            text-decoration:none;
+            position:absolute;
+            top:66px;
+            left:25vw;
+            display:none;
+            
+
+        }
+        #about a{
+            text-decoration: none;
+            color:white;
+        }
+        #about p:hover{
+            color:rgb(253, 149, 13);
+        }
+        #liname{
+            cursor:pointer;
+        }
+    </style>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" media="screen and (max-width:730px)" href="css730.css">
+    <link rel="stylesheet" media="screen and (max-width:630px)" href="css630.css">
+    <link rel="stylesheet" media="screen and (max-width:500px)" href="index500.css">
+    <link rel="stylesheet" media="screen and (max-width:400px)" href="css400.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap" rel="stylesheet">
+    
+    <link rel="icon"  href="Logo For IWT 1 cropped.jpg">
+    <script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+    <link rel="stylesheet" href="social.css">
+    
+        
+
+    
+</head>
+<body>
+    	
+    <header class="header">
+        <div id="navbars" class="navbars">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutmain.html">About</a></li>
+                <li><a href="World_Reach.html">Our Reach</a></li>
+                
+                <li><a href="volunteer_form.html">Join Us</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="faq (2).html">Questions</a></li>
+                <li><a href="help.html">Help</a></li>
+
+            </ul>
+        </div>
+        <div class="social">  
+			<ul>
+				<li><a href="https://www.facebook.com/profile.php?id=100077062213344">
+					<i class="fab fa-facebook-f"></i><span>FACEBOOK</span>
+				</a></li>
+				<li><a href="https://twitter.com/nai_shuruwat26?t=RRmQX9Jlp7a5VLgsw3fedQ&s=08">
+					<i class="fab fa-twitter"></i><span>TWITTER</span>
+				</a></li>
+				<li><a href="https://www.instagram.com/nai_shuruwat_/">
+					<i class="fab fa-instagram"></i><span>INSTAGRAM</span>
+				</a></li>
+				<li><a href="https://www.facebook.com/robinhoodarmy">
+					<i class="fab fa-linkedin-in"></i><span>LINKEDIN</span>
+				</a></li>
+				<li><a href="https://www.youtube.com/channel/UC5W0JUXMat0BQUui--ubSpA">
+					<i class="fab fa-youtube"></i><span>YOUTUBE</span>
+				</a></li>
+				
+			</ul>
+		</div>
+        <div id="about">
+            <p><a href="aboutmain.html" style="color:white">About Us</a></p>
+            <p><a href="promotion.html" style="color:white">Supporting NGO</a></p>
+        </div>
+        <nav class="nav">
+            <div class="logo">
+                <img src="Logo For IWT 1 cropped.jpg" alt="Feed People">
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li id="liname" >About Us</li>
+                    <li><a href="World_Reach.html">Our Reach</a></li>
+                    
+                    <li><a href="volunteer_form.html">Join Us</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="faq (2).html">Questions</a></li>
+                    <li><a href="help.html">Help</a></li>
+
+                </ul>
+            </div>
+            
+            <div class="button">
+                <button>
+                    <a href="login_form.html" style="text-decoration:none"><span style="font-weight: 600;font-size: larger;">.</span>
+                        log In</a>  </button>
+            </div>
+            <div class="button2">
+                <button onclick="togglehide()"> <i style="font-size: 1.6em;" class="fa fa-align-justify"></i></a>  </button>
+            </div>
+            
+        </nav>
+        <div id="java"></div>
+        <a href="newsindex.html" style="text-decoration:none" target="_blank">
+            <section class="section1">
+                <div></div>
+                    <h2>India In Global Hunger Index</h2>
+                    <p>Do you know fifteen percent of the Indian population every night sleeps hungry? This week India Loud and Clear talks about the issues of Food crisis. The issue which hardly finds its place in media reports, Prime-time or in sensational or breaking news.194 million Indians are undernourished. Recently out of 117 countries, India ranked at 104 at the Global Hunger Index.</p>
+                </div>
+                
+            </section>
+        </a>
+        <section class="section3">
+            <div >
+                <h2>India In Food Index</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium optio neque officia! Reiciendis harum debitis illum sapiente minima nam, non libero culpa veritatis omnis voluptatem sequi quasi sit? Laudantium illum laborum at quos laboriosam.</p>
+            </div>
+            
+        </section>
+        <section class="section2">
+            <div >
+                <h2>India In Food Index</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium optio neque officia! Reiciendis harum debitis illum sapiente minima nam, non libero culpa veritatis omnis voluptatem sequi quasi sit? Laudantium illum laborum at quos laboriosam.</p>
+            </div>
+            
+        </section>
+
+    </header>
+    <section class="content">
+        <div class="content2" title="for more information click on its header">
+            <div class="content3s">
+                <h2>Who are We?</h2>
+                <p>We are a zero-funds volunteer organization that works to get surplus food from restaurants and communities to serve the people who are fighting with hunger.Our only aim is to manage food for every hungery people.We are mostly students and Young professionals who has their work but they work for people and this organization in their free time and this shows their determination towards helping people.We are managing food for homeless families,orphanges,patients from hospitals and old age homes.We get food for the people from restaurants,hotels which regularly provides food freshly cooked food on a surplus basis</p>
+            </div>
+            
+            <div>
+                <img src="shane-rounce-DNkoNXQti3c-unsplash.jpg" alt="" class="secimg s1">
+
+            </div>
+        </div>
+        
+        <div class="content3" title="for more information click on its header">
+            <div>
+                <img src="istockphoto-1158027853-170667a.jpg" alt="" class="secimg">
+            </div>
+            <div class="content3s">
+                <h2>How did this start?</h2>
+            <p>Up to 811 million people are going hungry, more than 2 billion suffer from malnutrition, but there is enough food, knowledge and resources for all. And what's more, food is a human right.So we decided to take a small initiative to solve the problem of hunger and bring people  together who want to help and who need help.we started this community on 23 january,2020 in Patna,Bihar and then eventually spreads its operation to the other cities New Delhi,Mumbai,Kolkata,Hyderabad,
+            Pune,Dehradun,Chennai,Bengaluru
+            ,Bhopal,Jaipur.Also we are actively working in many Forign countries like <b>Siera leone,Haiti,Libera,Madagascar,
+            Congo,Yemen,Somalia etc.</b>But we feels that we have done just 1% of our aim.We can complete our aim only with more and more people so we requeest everyone to come forward to help.  </p>
+
+            </div>
+            
+        </div>
+        <div class="content4" title="for more information click on its header">
+            <div class="content3s">
+                <h2>What About Funds</h2>
+                <p>We have only one Rule-We are a little fund organization.We have no revenue,employees,nor office space-if you want to help ,all we need is your time.By the way our balance sheet is:-</p>
+                <div class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">Two year trend-Meals </th>
+                            </tr>
+                            <tr>
+                                <th>year</th>
+                                <th>People Served</th>
+        
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2020</td>
+                                <td>45,600</td>
+                            </tr>
+                            <tr>
+                                <td>2021</td>
+                                <td>2,15,930</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table >
+                        <thead>
+                            <tr>
+                                <th colspan="2">Two year trend </th>
+                            </tr>
+                            <tr>
+                                <th>Credit</th>
+                                <th>Amount</th>
+        
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>New Cities Launched</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>No of people Served</td>
+                                <td>2,61,530</td>
+                            </tr>
+                            <tr>
+                                <td>Street Children Admitted to School</td>
+                                <td>450</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td>1% Done</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <img src="istockphoto-1188384275-170667a.jpg" alt="" class="secimg">
+            </div>
+
+            
+        </div>    
+                        
+        <div class="content5"title="for more information click on its header">
+            <div>
+                <img src="istockphoto-517194605-170667a.jpg" alt="" class="secimg">
+
+            </div>
+            <div class="content3s">
+                <h2>Questions</h2>
+                <h4>How can I join?</h4>
+                <p>If you want to join us as a volunteer then you can join us by clicking on join us link in menu bar and filling a small form.We just need your three hours per week. </p>
+                <h4>Is there any certificate for volunteer?</h4>
+                <p>Naa – we want our team to serve less fortunate people, not build their own polished resumes 🙂 . Citizens First → Mission Next → Robins Last.</p>
+                <h4>Do you have any rule?</h4>
+                <p>hree specifically –  we are a-political, and we serve all religions. If anyone claims to being those using the name of RHA, please drop us a message <a href="help.html" style="text-decoration: none; ">here.</a>  </p>
+
+            </div>
+            
+
+        </div>
+
+    </section>
+    
+    <section id="footer">
+        <h2 id="awkward">Our team is here to help</h2>
+        <div class="section">
+            <div class="first">
+                <h3>Area Specialist</h3>
+                <img src="IMG-20211217-WA0002.jpg" alt="">
+                <h4>JEEVESH</h4>
+                <p>If you want to know in which areas we are active and any type of area related information you can call him</p>
+                <p>9876543210</p>
+                <a href="mailto-anupamjhabbl@gmail.com">anupamjhabbl@gmail.com</a>
+
+            </div>
+            <div class="first">
+                <h3>Programs Specialist</h3>
+                <img src="callcenter1.jpg" alt="">
+                <h4>HARPREET</h4>
+                <p>If you want to know anything about our programs,today's program or others then you can contact him</p>
+                <p>9876543210</p>
+                <a href="mailto-anupamjhabbl@gmail.com">example@gmail.com</a>
+
+            </div>
+            <div class="first">
+                <h3>Technical Support</h3>
+
+                <img src="IMG-20211217-WA0003.jpg" alt="">
+                <h4>AAYUSH</h4>
+                <p>If you want to know any thing about our website or if you have any advice for our website please contact him</p>
+                <p>9876543210</p>
+                <a href="mailto-anupamjhabbl@gmail.com">example2@gmail.com</a>
+
+            </div>
+            <div class="first">
+                <h3>Advisor</h3>
+                <img src="20210728_174302 - Copy.jpg" alt="">
+                <h4>ANUPAM</h4>
+                <p>If you want to know anything related to our organisation or if you are a media personality and want interview then contact him</p>
+                <p>9876543210</p>
+                <a href="mailto-anupamjhabbl@gmail.com">example1993@gmail.com</a>
+
+            </div>
+        </div>
+
+    </section>
+    <script>
+        
+        let name=prompt("what is your name","Guest");
+        document.getElementById('java').innerHTML=`<h2>Hi ${name},Do you know?</h2>`;
+        function togglehide(){
+            let pos=document.getElementById('navbars');
+            if (pos.style.display!="none"){
+                pos.style.display="none";
+            }
+            else{
+                pos.style.display="block";
+            }
+            
+
+        }
+        let about=document.getElementById("liname");
+        about.addEventListener("click",runnn);
+        
+        function runnn(e){
+        
+            let about=document.getElementById("about");
+            
+            if (about.style.display=="none"){
+                
+                about.style.display="block";
+            }
+            else{
+                about.style.display="none";
+            }
+            
+
+
+        }
+        
+        
+         
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+body{
+    margin:0px;
+    
+
+    background-color: #0d4075;
+    
+}
+.about_section1_left img{
+    height:770px;
+    
+    margin-left:-130px;
+     
+    
+}
+.about_section1{
+    display:flex;
+
+}
+.about_section1_right{
+    background-color: #0d4075;
+    border:0px;
+    outline:0px;
+    color:white;
+    text-align: justify;
+    margin-top:220px;
+    margin-left:-140px;
+    margin-right:70px;
+
+}
+
+#lodo{
+    width:90px;
+    height:80px;
+    border-radius: 50%;
+    margin-left:220px;
+    margin-bottom:30px;
+}
+#nav_lodo{
+    width:70px;
+    height:60px;
+    border-radius: 50%;
+    margin:0px;
+
+}
+.dropdown_div{
+    display:none;
+    width:200px;
+    position:fixed;
+    padding-left:0px;
+    left:250px;
+
+}
+.dropdown_div li{
+    list-style: none;
+    margin-left:-33px;
+}
+
+.intro_of_nai_shuruwat{
+    background-color:#0d4075;
+    color:white;
+    text-align: justify;
+    border:0px;
+    margin-top:70px;
+    margin-left:150px;
+    margin-right:150px;
+
+
+}
+.intro_of_nai_shuruwat h2{
+    margin:auto;
+    margin-bottom:30px;
+}
+.videos{
+    display:flex;
+    flex-wrap:wrap;
+    margin-left:100px;
+    margin-right:100px;
+    justify-content: space-between;
+}
+.videos div{
+    margin:20px;
+    
+    padding: 6px;
+    border: 9px outset #ddd;
+      
+}
+span{
+    font-size:20px;
+    font-weight:890;
+    margin-right:6px;
+
+}
+.list-group-item{
+    width:600px;
+    margin:auto;
+}
+.list-group-item:hover{
+    background-color: rgba(38, 0, 255, 0.671);
+    color:white;
+
+}
+.instagram_image{
+    margin-left:0px;
+    margin-right:0px;
+}
+.instagram_image img{
+    width:1000px;
+    margin-left:103px;
+    margin-top:20px;
+
+}

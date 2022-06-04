@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Nai Shuruwat-Donate</title>
+    <link rel="icon" href="Logo For IWT 1 cropped.jpg">
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        body{
+            margin:0px;
+            background-image: url("pickawood-gf8e6XvG_3E-unsplash.jpg");
+            background-size: cover;
+        }
+        #blank1{
+            background-color: rgba(0, 0, 0, 0.5);
+            
+           
+            
+            border: 1px solid black;
+            
+
+        }
+        body>h1{
+            text-align:center;
+            max-width:400px;
+            margin:auto;
+            margin-top:40px;
+            color:white;
+
+        }
+        label{
+            color:white;
+        }
+
+        .nav{
+            background-color: rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            height:80px;
+                                /*navigation bar*/
+            width:100vw;
+            
+            position:sticky;
+            top:0px;
+            
+        }
+        
+         #nav li{
+            display:inline-block;
+            padding:10px;
+            transition:color 0.5s;                     /*navigation bar*/
+            padding:0px;
+            font-size: 17px;
+            margin:10px;
+            margin-right:16px;
+            
+            
+            
+        }
+        #login:hover{
+              box-shadow: 2px 2px 2px 2px black;
+              
+        }
+        
+        #nav li:hover{
+            color: rgb(252, 134, 0);
+            border-bottom: 1px solid rgb(252, 134, 0);
+            font-size: 20px;
+            
+        }
+        #login{
+           position:relative;
+           bottom:10px;
+        }
+
+        #button1:hover{                                          /*ISSUE HERE*/
+            box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
+            width: 200px;
+            border-radius:4px;
+           
+            
+        }
+
+        #button2:hover{
+            box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
+            width: 24%;
+            border-radius:4px;
+            
+            
+        }
+        
+        #backgroundimage{
+            height:990px;
+            width:1006px;
+            margin:0 -10px 0 -7px;
+            
+
+        }
+        #form{
+            width:800px;
+            margin:auto;
+            
+            padding:30px;
+            position:relative;
+            top:50px;
+            
+            
+        }
+        
+        #form input{
+            display:block;
+            width:90%;
+            height:23px;
+            margin:10px 30px;
+            margin-left:0px;
+            border:2px solid black;
+            border-radius:5px;
+            outline:0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size:16px;
+            padding-left: 14px;;
+
+
+
+
+        }
+        .sec,.sec1{
+            display: flex;
+        }
+        .sec>div{
+            width:48%;
+        }
+        .sec1>div{
+            width:31.5%;
+        }
+        select{
+            display:block;
+            
+            width:90%;
+            font-size: 20px;
+            
+            margin-top:9px;
+            border:2px solid black;
+            border-radius:5px;
+        }
+        #pay{
+            width:160px;
+            height:35px;
+            background-color:rgb(4, 0, 255);
+            color:white;
+            border:0px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size:large;
+            font-weight: 400;
+            margin:auto;
+            display:block;
+            margin-top:30px;
+            
+            
+            
+        }
+        #pay:hover{
+            box-shadow:2px 2px 5px black;
+
+        }
+        #pay:active{
+            box-shadow:-2px -2px 5px black;
+        }
+        select{
+            font-size:15px;
+            padding:4px;
+        }
+        .button>button:hover{
+            box-shadow:1px 1px 5px black;
+        }
+        
+        
+
+    </style>
+    
+
+</head>
+
+<body>
+
+    
+     
+    
+        
+    <nav id="blank1" class="nav" >
+        <div><!--logo image-->
+            <img src="Logo For IWT 1 cropped.jpg" style="height:60px;width:70px;border-radius: 50%;margin:10px">
+        </div>
+        
+        <div >
+            <ul id="nav" style="margin-left:-100px ;">
+                <li ><a style="text-decoration: none;color: white;" href="index.html">Home</a></li>
+                <li ><a style="text-decoration: none;color: white;" href="aboutmain.html">About Us</a></li>
+                <li ><a style="text-decoration: none;color: white;" href="World_Reach.html">Our Reach</a></li>
+                <li ><a style="text-decoration: none;color: white;" href="faq (2).html">Questions</a></li>
+                <li ><a style="text-decoration: none;color: white;" href="volunteer_form.html">Join Us</a></li>
+                <li ><a style="text-decoration: none;color: white;" href="#">Donate</a></li>
+                <li ><a style="text-decoration: none;color: white;" href="help.html">Help</a></li>
+            </ul>
+        </div>
+
+        <div class="button">
+            <button id="login" style="margin-top:34px;"><a href="login_form.html" style="text-decoration: none;">Log In</a></button>
+        </div>
+    </nav>
+    
+    
+    <h1 id="heading1">Money Donation Form</h1>   <!--*****CANT GIVE TEXT SHADOW*******-->
+    
+    <div >  
+                   
+
+        <form  id="form" >
+            
+            <div class="sec">
+                <div>
+                    <label for="FirstName" >First Name*:</label>
+                    <input id="Firstname" placeholder="First Name">
+                </div>
+                <div>
+                    <label for="LastName" >Last Name*:</label>
+                    <input required id="LastName"  name="Last Name" type="text" placeholder="Last Name">
+                </div>
+
+            </div>
+            <div class="sec">
+                <div>
+                    <label for="phonenumber" >Phone Number*:</label>
+                    <input required  id="phonenumber1" name="phone number1" type="number" placeholder="xxxxxxxxxx" >
+                           
+                </div>
+                <div>
+                    <label for="email"  >Email:</label><br>
+                    <div><input id="email" name="email" type="email" placeholder="Enter your Email"></div>
+                </div>
+            </div>
+            <div class="sec1">
+                <div>
+                    <label for="city" " >City*:</label><br>
+                    <div><input required id="city" name="city" type="text" placeholder="Enter your City"></div>
+                </div>
+    
+    
+               
+    
+    
+                <div>
+                    <label for="state" >State*:</label><br>
+                    <div><input required id="state" name="state" type="text" placeholder="Enter your State"></div>
+                </div>
+    
+    
+                
+    
+    
+                <div>
+                    <label for="country"  >Country*:</label><br>
+                    <div><input required id="country" name="country" type="text" placeholder="  Enter your Country"></div>
+                </div>
+
+            </div>
+            <div class="sec">
+                <div>
+                    <label for="amountinfigures"  >Amount in figures*(in Rs):</label><br>
+                    <div><input required  id="amountinfigures" name="amountinfigures" type="number" placeholder="  Figures"></div>
+                </div>
+                <div>
+                    <label for="type">Payment method: </label>
+                    <select name="payment_method" id="type">
+                        <option value="card">credit or debit card </option>
+                        <option value="UPI">UPI  </option>
+                        <option value="Net Banking">Net Banking</option>
+                        <option value="PayPal">PayPal</option>
+                        <option value="American Express">American Express </option>
+                    </select>
+                </div>
+            </div>
+    
+            <div class="pay" id="problem">      <!--*******HERE IS THE ISSUE*******-->
+                <button id="pay" >Pay Now</button>
+            </div>
+
+               
+        </form>
+        
+
+        
+    </div>
+
+
+</div>
+<script>
+    
+    let name=document.getElementById("form");
+    let ne=document.createElement("div");
+    
+    
+    let button=document.getElementById("pay");
+    button.addEventListener("click",send);
+    function send(){
+        let type=document.getElementById("type");
+        if (type.value=="card"){
+            ne.innerHTML=`<h2>Card Details</h2>
+                <div class="sec">
+                    <div>
+                        <label for="card_no">Card No</label>
+                        <input type="number" id="card_no" placeholder="xxxx xxxx xxxx xxxx">
+
+                    </div>
+                    <div >
+                        <label for="expiry">Expiry</label>
+                        <input type="date" id="expiry" placeholder="xx/xxxx">
+        
+                    </div>
+                
+                    
+                </div>
+            
+                
+                <div class="sec">
+                    <div >
+                        <label for="cardname">Cardholder Name</label>
+                        <input type="text" id="cardname" >
+                        
+                    </div>
+                    <div>
+                        <label for="cvv">cvv</label>
+                        <input type="number" id="cvv" placeholder="xxx" >
+
+                    </div>
+                    
+                    
+                </div>`;
+
+        }
+        else if(type.value=="UPI"){
+            ne.innerHTML=`<h2>UPI Details</h2>
+                <div class="sec">
+                    <div>
+                        <label for="card_no">UPI ID</label>
+                        <input type="number" id="card_no" placeholder="Your UPI ID here">
+
+                    </div>
+                </div>`;
+
+
+        }
+        else if(type.value=="Net Banking"){
+            ne.innerHTML=`<h2>Bank Details</h2>
+                <div class="sec">
+                    <div>
+                        <label for="type">Select your Bnk </label>
+                        <select name="payment_method" id="type">
+                            <option value="card">HDFC Bank</option>
+                            <option value="UPI">ICICI Bank  </option>
+                            <option value="Net Banking">State Bank of India</option>
+                            <option value="Paypal">Axis Bank </option>
+                            <option value="American Express">Allahabad Bank </option>
+                            <option value="card">Airtel Payment Bank</option>
+                            <option value="UPI">Punjab National Bank</option>
+                            <option value="Net Banking">Central Bank of India</option>
+                            <option value="Paypal">Punjab and Sind Bank </option>
+                            <option value="American Express">Kotak Mahindra Bank </option>
+                            <option value="American Express">Canara Bank</option>
+                            <option value="card">Union Bank of India</option>
+                            <option value="UPI">Bank of Baroda</option>
+                            <option value="Net Banking">Bank of India</option>
+                            <option value="Paypal">Indian Overseas Bank </option>
+                            <option value="American Express">Bank of Maharashtra </option>
+                            <option value="American Express">Yes Bank</option>
+                            <option value="card">IDBI Bank</option>
+                            <option value="UPI">IndusInd Bank</option>
+                            <option value="Net Banking">Federal Bank</option>
+                            <option value="Paypal">IDFC First Bank </option>
+                            <option value="American Express">Jammu and Kashmir Bank</option>
+                        </select>
+
+                    </div>
+                </div>`;
+
+
+        }
+        else{
+            alert(`sorry for the inconvenience but  ${type.value} is  off at this time, you can try another available methods`);
+        }
+
+        
+        console.log("ho");
+        let solution=document.getElementById("problem")
+        name.insertBefore(ne,solution);
+        console.log("ho");
+
+    }
+</script>
+
+</body>
+
+</html>

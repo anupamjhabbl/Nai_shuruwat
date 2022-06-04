@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Logo For IWT 1 cropped.jpg">
+    <title>Nai Shuruwat-Our Reach</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        img{
+            display:block;
+            width:1100px;
+            height: 690px;
+            margin-left: 30px;;
+            border:2px solid black;
+            border-radius:8px;
+            box-shadow:2px 2px 5px black;
+            margin-top:20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="body">
+        <img src="World_Map.jpg" alt="" usemap="#mymap">
+        <map name="mymap">
+            <area  class="area" shape="circle" coords="137,146,14px" href="Sacramanto,California.html">
+            <area class="area" shape="circle" coords="380,359,16px" href="Brasilia, Brasil.html">
+            <area class="area" shape="circle" coords="663,381,15px" href="Harare, Zimbawe.html">
+            <area class="area" shape="circle" coords="650,188,14px" href="Cairo, Egypt.html">
+            <area class="area" shape="circle" coords="587,120,8px" href="Berlin,Germany.html">
+            <area class="area" shape="circle" coords="547,111,10px" href="London, UK.html">
+            <area class="area" shape="circle" coords="802,195,15px" href="Bharat.html">
+            <area class="area" shape="circle" coords="907,305,10px" href="Singapore.html">
+            <area class="area" shape="circle" coords="1066,439,10px" href="Sydney, Australia.html">
+        </map>
+    </div>
+    <script>
+        let obj={
+            Rajasthan:"IMG-20211216-WA0000.jpg",
+            Punjab:"IMG-20211216-WA0002.jpg",
+            JammuandKashmir:"IMG-20211216-WA0003.jpg",
+            Harayana:"IMG-20211216-WA0001.jpg",
+        }
+
+
+
+
+        let area=document.querySelectorAll(".area");
+        area.forEach(item=>{
+            item.addEventListener("mouseover",universal);
+        });
+        area.forEach(item=>{
+            item.addEventListener("mouseout",funday);
+        });
+        function universal(e){
+            let str=e.target.getAttribute("href");
+            let n=str.indexOf(".html");
+            str=str.slice(0,n);
+            let array_state=str.split(" ");
+            let raw_str="";
+            for (statename of array_state){
+                raw_str=raw_str+statename;
+
+            }
+            str=raw_str;
+            console.log(str)
+            raw_str="";
+            for (statename of array_state){
+                raw_str=raw_str+statename+" ";
+
+            }
+            
+            fun(str,raw_str)
+        }
+        //let jk=document.getElementById("jk");
+        //jk.addEventListener("mouseover",fun);
+        //jk.addEventListener("mouseout",funday);
+        
+        function fun(str,raw_str){
+            
+            let ele=document.createElement("img");
+            let heading=document.createElement("h3");
+            heading.id="js_head"
+            heading.setAttribute("style","font-family:cursive;position:fixed;text-align:center;width:200px;background-color:black;color:white;height:40px;top:22px;right:71px")
+            heading.innerHTML=raw_str;
+            ele.setAttribute("src",`${str}.jpg`);
+            ele.setAttribute("style","position:fixed;width:300px;height:250px;top:110px;right:20px");
+            ele.id="image";
+            
+            console.log(ele);
+            let ele2=document.querySelector(".body");
+            ele2.appendChild(heading);
+            ele2.appendChild(ele);
+        }
+        function funday(){
+            let ele=document.getElementById("image");
+            ele.remove()
+            let heading=document.getElementById("js_head");
+            heading.remove()
+
+        }
+        
+    </script>
+    
+
+</body>
+</html>

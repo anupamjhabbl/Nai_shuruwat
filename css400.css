@@ -1,0 +1,41 @@
+.nav{
+    display:flex;
+    justify-content:space-between;
+    background-color: rgb(0,0,0,0.5);
+    position: sticky;
+    top:0px;
+    z-index:3;
+    width:130vw;
+    
+
+    
+    
+    
+}
+.social{
+    display:none;
+}
+footer{
+    background-color: rgb(248, 241, 241);
+    color:black;;
+    width:130vw;
+}
+.header{
+    width:132vw;
+    height:120vh;
+    
+}
+.header::before{
+    content:'';
+    position:absolute;
+    background-image: url('2.jpg');
+    z-index:-1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:132vw;
+    height:120vh;
+    animation-name:anupam;
+    animation-duration: 60s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+}

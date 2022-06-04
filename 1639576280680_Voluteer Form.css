@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <meta http-equiv="refresh" content="5">
+        <title>VOLUNTEER FORM</title>
+    </head>
+    <BODY>
+        <h1>Volunteer Registration</h1>
+        <form>
+            <div>
+                <h2>Name</h2>
+               <b><label for="name1">First Name</label></b><br>
+               <!--<b><label for="name2">Second Name</label></b><br>-->
+                <input name="First Name" id="name1" type="text" required> <br>
+    
+                <b><label for="name2">Second Name</label></b><br>
+                <input name="Second Name" id="name2" type="text" required> 
+            </div>
+            <div>
+                <h2>Address</h2>
+
+                <h3>Present</h3>
+
+                <b><label for="Home Number">Home Number</label></b><br>
+                 <input id="Home Number" type="text" required> <br>
+
+                <b><label for="State">State</label></b><br>
+                 <input name="State" id="State" type="text" required> <br>
+     
+                 <b><label for="City">City</label></b><br>
+                 <input name="City"id="City" type="text" required><br> 
+
+                 <b><label for="Pin-code">Pin-Code</label></b><br>
+                 <input name="Pin-Code" id="PinCode" type="number" required> <br>
+
+                 <h3>Permanant</h3>
+
+                 <b><label for="Home Number1">Home Number</label></b><br>
+                 <input id="Home Number1" type="text" required> <br>
+
+                <b><label for="State1">State</label></b><br>
+                 <input name="State1" id="State1" type="text" required> <br>
+     
+                 <b><label for="City1">City</label></b><br>
+                 <input name="City1"id="City1" type="text" required><br> 
+
+                 <b><label for="Pin-code1">Pin-Code</label></b><br>
+                 <input name="Pin-Code1" id="PinCode1" type="number" required> <br>
+                            
+                
+            </div>
+            <div>
+                <h2>Contact Number</h2>
+                <b><label for="Contact Number1">Contact Number 1</label></b>*<br>
+                <input name="Contact Number1"  id="Contact Number1" type="number" placeholder="XXXXX-XXXXX" required> <br>
+                <b><label for="Contact Number2">Contact Number 2</label></b><br>
+                <input name="Contact Number2" id="Contact Number2" type="number" placeholder="XXXXX-XXXXX" > <br>
+                 
+            </div>
+            <br>
+            <div>
+                <b>Age</b><br>
+                <select name="Age">
+                    <option>&lt18</option>
+                    <option>&gt=18</option>
+                    <option>&lt=30</option>
+                    <option>&lt=40</option>
+                    <option>&lt=50</option>
+                    <option>&lt=60</option>
+                    <option>&gt60</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <b><label for="Date">Date</label></b><br>
+                <input name="Date" id="Contact Number1" type="number" placeholder="XX-XX-XXXX" required> <br>
+            </div>
+            <br>
+            <div>
+                <b>Interested in Volunteering at</b><br>
+                <input name="Interested at"  id="School"  type="radio"> 
+                <label for="School" >School</label><br>
+                
+                <input name="Interested at" id="Parish" type="radio"> 
+                <label for="Parish">Parish</label><br>
+                
+                <input name="Interested at" id="Agency" type="radio"> 
+                <label for="Agency">Agency</label><br>
+
+                <input name="Interested at" id="Others at" type="radio"> 
+                <label for="Others at">Others</label><br>
+                
+            </div>
+            <br>
+            <div>
+                <b>Interested in Volunteering for</b><br>
+                <input name="Interested for"  id="School Activities"  type="checkbox"> 
+                <label for="School Activities" >School Activities</label><br>
+                
+                <input name="Interested for" id="Religious Education" type="checkbox"> 
+                <label for="Religious Education">Religious Education</label><br>
+                
+                <input name="Interested for" id="Youth Ministery" type="checkbox"> 
+                <label for="Youth Ministery">Youth Ministery</label><br>
+
+                <input name="Interested for" id="Coaching" type="checkbox"> 
+                <label for="Coaching">Coaching</label><br>
+
+                <input name="Interested for" id="Others for" type="checkbox"> 
+                <label for="Others for">Others</label><br>
+            </div>
+            <div>
+                <b>Available</b><br>
+                <input name="Interested for"  id="Morning"  type="radio"> 
+                <label for="Morning" >Morning</label><br>
+                
+                <input name="Interested for" id="Weekends" type="radio"> 
+                <label for="Weekends">Weekends</label><br>
+                
+                <input name="Interested for" id="Week Days" type="radio"> 
+                <label for="Week Days">Week Days</label><br>
+
+                <input name="Interested for" id="Afternoon" type="radio"> 
+                <label for="Afternoon">Afternoon</label><br>
+
+                <input name="Interested for" id="Evening" type="radio"> 
+                <label for="Evening">Eveniing</label><br>
+
+            </div>
+                <br>
+            <div>
+                <b><label for="Email">Email</label></b>: 
+                <input id="Email" name="Email" type="email" placeholder="abc@gmail.com" required>
+            </div>
+            <br>
+            <div>
+                <b><label for="why" >Why you want to join this Organisation ?</label></b><br>
+                 <textarea id="why" name= "experience" rows="10" cols="80"></textarea>
+            </div>
+
+
+
+        </form>
+    </BODY>
+</html>

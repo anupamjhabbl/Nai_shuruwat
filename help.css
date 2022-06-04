@@ -1,0 +1,81 @@
+.section{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around ;
+    color:rgb(253, 253, 253);
+    margin-top:50px;
+    background-color: aliceblue;
+    
+}
+.first{
+    width:300px;
+    height:370px;
+    text-align:center;
+    background-color: rgba(38, 0, 255, 0.897);;
+    
+    padding:20px;
+    margin:14px 0px;
+    overflow:hidden;
+    font-family:'Arapey', serif ;
+    font-weight: 400;
+    font-size: 18px;
+    box-shadow:.7px .7px 35px rgb(0, 238, 255);
+    border-radius:9px;
+    transition-property: all;
+    transition-duration: 0.5s;;
+    
+}
+.first:hover{
+    transform:scale(1.05);       /*this is causing that hovering effect*/
+    z-index: 3;
+}
+.first img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    box-shadow: none;
+    display:block;
+    margin:auto;
+    
+    position:relative;
+    top:0px;
+    left:0px;
+    z-index:7;
+
+}
+.first img:hover{
+    width:90px;
+    height:90px;
+
+}
+#awkward{
+    background-color: rgba(38, 0, 255, 0.897);
+    border-radius:8px;
+    width:360px;
+    margin:auto;
+    height:40px;
+    text-align: center;
+    color:white;
+    
+    
+
+
+}
+section p:hover{
+    color:rgb(206, 219, 14);
+
+}
+
+.section a{
+    color:white;
+    text-decoration: none;;
+}
+.section a:hover{
+    color:rgb(206, 219, 14);
+    text-decoration:underline;;
+}
+#footer{
+    background-color: aliceblue;
+    padding-top:80px;
+   
+}

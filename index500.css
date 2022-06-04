@@ -1,0 +1,111 @@
+.section1{
+    width:80vw;
+    text-align: center;
+    font-size:16px;
+    margin:auto;
+    position:relative;
+    top:20vh;
+    background-color: rgb(0,0,0,0.5);
+    padding:10px;
+    padding-left: 20px;;
+    color:white;
+    animation-name:anupam1;
+    animation-duration: 60s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+    
+    
+
+}
+.content{
+    width:120vw;
+}
+.secimg{
+    display:none;
+}
+.nav{
+    justify-content: space-evenly;
+}
+.navbar ul{
+    display:none;
+}
+.button2>button{
+    display:block;;
+    width:86px;
+    height:36px;
+    border-radius: 16px;;
+    margin-left:40px;
+    
+
+}
+.body{
+    flex-direction:column;
+
+
+}
+.body>div:nth-child(1){
+    
+    margin:20px;
+    margin-left:46px;
+    width:95vw;;
+}
+.body>div:nth-child(2){
+    
+    margin:20px;
+    width:95vw;;
+    margin-left:46px;
+}
+
+#java{
+    
+    top:17vh;
+    left:10px;
+    width:300px;
+    
+}
+.header{
+    width:120vw;
+    height:120vh;
+    
+}
+.nav{
+    display:flex;
+    justify-content:space-between;
+    background-color: rgb(0,0,0,0.5);
+    position: sticky;
+    top:0px;
+    z-index:3;
+    width:120vw;
+    
+
+    
+    
+    
+}
+.header::before{
+    content:'';
+    position:absolute;
+    background-image: url('2.jpg');
+    z-index:-1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:120vw;
+    height:120vh;
+    animation-name:anupam;
+    animation-duration: 60s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+}
+.content3{
+    position: relative;
+    left:0px;
+    
+    margin-top:40px;
+    box-shadow: -4px -4px 3px black,inset ;
+}
+footer{
+    background-color: rgb(248, 241, 241);
+    color:black;;
+    width:120vw;
+}
+

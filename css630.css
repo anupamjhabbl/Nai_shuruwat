@@ -1,0 +1,65 @@
+.header{
+    width:110vw;
+    height:100vh;
+    
+}
+.header::before{
+    content:'';
+    position:absolute;
+    background-image: url('download.jpg');
+    z-index:-1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:110vw;
+    height:100vh;
+    animation-name:anupam;
+    animation-duration: 60s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+}
+.nav{
+    display:flex;
+    justify-content:space-between;
+    background-color: rgb(0,0,0,0.5);
+    position: sticky;
+    top:0px;
+    z-index:3;
+    width:110vw;
+    
+    
+
+    
+    
+    
+}
+.body{
+    flex-direction:column;
+
+
+}
+.body>div:nth-child(1){
+    
+    margin:20px;
+    margin-left:46px;
+    width:95vw;;
+}
+.body>div:nth-child(2){
+    
+    margin:20px;
+    width:95vw;;
+    margin-left:46px;
+    top:80px;
+}
+
+.content3,.content5,.content2,.content4,.content6{
+   position:relative;
+   left:7%;
+    
+    margin-top:40px;
+    box-shadow: -4px -4px 3px black,inset ;
+}
+footer{
+    background-color: rgb(248, 241, 241);
+    color:black;;
+    width:110vw;
+}

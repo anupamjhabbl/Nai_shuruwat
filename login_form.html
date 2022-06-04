@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nai Shuruwat-Log In</title>
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" media="screen and (max-width:400px)" href="css400.css">
+	<link rel="stylesheet" media="screen and (max-width:500px)" href="index500.css">
+	
+	<style>
+		.nav{
+			background-color: none;
+		}
+		
+		@media only screen and  (max-width:1300px){
+			body{
+				height:120vh;
+			}
+		}
+		
+		
+		.form{
+			max-width:380px;
+			
+			
+			margin:auto;
+			padding:10px;
+			position:relative;
+			top:190px;
+			/*border:2px solid rgb(0, 153, 255);*/
+			border-top-left-radius: 20px;
+			border-bottom-right-radius: 20px;
+			border-top-right-radius: 10px;
+			border-bottom-left-radius: 10px;
+			box-shadow:3px 3px 5px rgba(26, 25, 25, 0.712),-3px -3px 6px rgb(255, 255, 255)  ;
+
+		}
+		.logon{
+			width:60px;
+			height:60px;
+			border-radius: 50%;
+			display:block;
+			margin:auto;
+			margin-bottom:8px;
+			box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.692),-2px -2px 4px rgba(0, 0, 0, 0.172);
+			
+		}
+
+		h2{
+			text-align: center;
+			color:rgb(0, 225, 255);
+		}
+		form{
+			display:flex;
+			flex-direction:column;
+			align-items: center;
+			
+		}
+		form input{
+			width:270px;
+			height:17px;
+			margin:10px;
+			border:2px solid pink;
+			border-radius: 18px;
+			height:30px;
+			padding-left:20px;
+			
+			font-size: large;
+			
+
+		}
+		.not_css{
+			
+			margin:auto;
+			position:relative;
+			bottom:10px;
+			width:220px;
+			text-align:center;
+		}
+		.logwith {
+			margin:auto;
+			width:267px;
+			
+		}
+		button{
+			width:250px;
+			height:31px;
+			margin:10px;
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			
+			font-size: large;
+			background-color: pink;
+			color:rgb(7, 7, 7);
+			border:2px solid pink;
+			border-radius: 18px;
+			transition-property:all ;
+			transition-duration: 1s;
+		}
+		.submit{
+			width:150px;
+			background-color: pink;
+			color:rgb(7, 7, 7);
+			border:2px solid pink;
+			border-radius: 18px;
+			
+		}
+		button:hover{
+			background-color:rgba(0, 225, 255, 0.555);
+			box-shadow: 3px 3px 5px  rgb(0, 225, 255), ;
+		} 
+		
+		
+		
+		body{
+			background-image: url('glass-card.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			position:relative;
+			
+		}
+		.time{
+			border:2px solid pink;
+			padding-left:10px;
+			padding-top:5px;
+			padding-top:5px;
+			position:fixed;
+			overflow: hidden;
+			width:140px;
+			height:40px;
+			box-sizing: border-box;
+			border-radius: 10px;
+			top:115px;
+			right:71px;
+			box-shadow: 2px 2px 5px rgb(233, 148, 162) ;
+			text-align: center;
+			font-size: larger;
+
+
+		}
+		.navbars{
+            display:none;
+            border:2px solid black;
+            position:fixed;
+            top:64px;
+            right:30px;
+            padding:30px;
+            z-index:25;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-weight: 400;
+            
+
+            
+        }
+        .navbars li{
+            list-style: none;;
+            font-size: larger;
+            margin-top:6px;
+            margin-bottom: 6px;;
+            
+        }
+        .navbars a{
+            text-decoration: none;
+            color:rgb(250, 249, 249);
+
+        }
+        .navbars a:hover{
+            text-decoration: underline;
+            color:rgb(243, 188, 9);
+
+        }
+        .button2>button{
+            display: none;;
+            width:56px;
+            height:36px;
+            border-radius: 16px;;
+            margin-top: 16px;;
+            
+
+        }
+		.email i{
+			position:relative;
+			right:38px;
+			
+
+		}
+		.password{
+			position:relative;
+			left:13px;
+		}
+
+	</style>
+	<link rel="stylesheet" media="screen and (max-width:500px)" href="index500.css">
+	<link rel="icon" href="Logo For IWT 1 cropped.jpg">
+	<script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+	<link rel="stylesheet" href="social.css">
+</head>
+<body>
+	<header>
+		<div id="navbars" class="navbars">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutmain.html">About Us</a></li>
+                <li><a href="World_Reach.html">Our Reach</a></li>
+                
+                <li><a href="volunteer_form.html">Join Us</a></li>
+                <li><a href="donate.html">Donate</a></li>
+				<li><a href="faq (2).html">Questions</a></li>
+				<li><a href="help.html">Help</a></li>
+
+            </ul>
+        </div>
+		<div class="time" id="time"></div>
+        <div class="social" >  
+			<ul>
+				<li><a href="https://www.facebook.com/profile.php?id=100077062213344">
+					<i class="fab fa-facebook-f"></i><span>FACEBOOK</span>
+				</a></li>
+				<li><a href="https://twitter.com/nai_shuruwat26?t=RRmQX9Jlp7a5VLgsw3fedQ&s=08">
+					<i class="fab fa-twitter"></i><span>TWITTER</span>
+				</a></li>
+				<li><a href="https://www.instagram.com/nai_shuruwat_/">
+					<i class="fab fa-instagram"></i><span>INSTAGRAM</span>
+				</a></li>
+				<li><a href="https://www.facebook.com/robinhoodarmy">
+					<i class="fab fa-linkedin-in"></i><span>LINKEDIN</span>
+				</a></li>
+				<li><a href="https://www.youtube.com/channel/UC5W0JUXMat0BQUui--ubSpA">
+					<i class="fab fa-youtube"></i><span>YOUTUBE</span>
+				</a></li>
+				
+			</ul>
+		</div>
+		<nav class="nav">
+            <div class="logo">
+                <img src="Logo For IWT 1 cropped.jpg" alt="Feed People">
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutmain.html">About Us</a></li>
+                    <li><a href="World_Reach.html">Our Reach</a></li>
+                    
+                    <li><a href="volunteer_form.html">Join Us</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+					<li><a href="faq (2).html">Questions</a></li>
+					<li><a href="help.html">Help</a></li>
+
+                </ul>
+            </div>
+            <div class="button">
+                <button> <a href="login_form.html" style="text-decoration:none">log In</a>  </button>
+            </div>
+			<div class="button2">
+                <button onclick="togglehide()"> <i style="font-size:1.8em" class="fa fa-align-justify"></i></a>  </button>
+            </div>
+        </nav>
+	</header>
+	
+	<div class="form" id="outerform" title="For login you must be our member,If you are not a member then click on join us}">
+		
+		<img class="logon" src="Logo For IWT 1 cropped.jpg" alt="">
+		<h2>Log In</h2>
+		<form id="form"  >
+			<div class="email input">
+				<input type="email" id="anupam_email"  name="anupam_email" placeholder="Your Email Here" required>
+	
+			</div>
+			<div class="email password input" >
+				<input type="password" id="password"  name="password" placeholder="Password" required><i class="fa fa-eye-slash" id="eye"></i>
+	
+			</div>
+			
+			<div class="butto" id="but" >
+				<button class="but" id="login_but"  class="submit">Submit</button>
+			</div>
+			
+			
+		</form>
+		<div class="not_css" id="forgot">
+			<p><a href="#">forgot password</a></p>
+		</div>
+		
+		<div class="logwith" id="logwith">
+			<div class="Google input">
+				<button class="but"><i class="fab fa-facebook-f"></i><span>&nbsp; &nbsp; &nbsp;login with facebook</span></button>
+			</div>
+			<div class="facebook input">
+				<button class="but"><i class="fab fa-linkedin-in"></i><span>&nbsp; &nbsp; &nbsp;login with Linkedn</span></button>
+			</div>
+			<div class="facebook input">
+				<button class="but"><i class="fab fa-google"></i><span>&nbsp; &nbsp;&nbsp;login with Google</span></button>
+			</div>
+
+		</div>
+		
+	</div>
+	<script>
+		function display(){
+			let now=new Date();
+			let m=`${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
+			document.getElementById("time").innerHTML=m;
+
+		}
+		setInterval(display,1000);
+		//alert("you can log in only if you have joined us already,if not then click on join us link");
+		//let name=prompt("what is your name","Guest");
+        //document.getElementById('java').innerHTML=`<h2>Hi ${name},Do you know?</h2>`;
+        function togglehide(){
+            let pos=document.getElementById('navbars');
+            if (pos.style.display!="none"){
+                pos.style.display="none";
+            }
+            else{
+                pos.style.display="block";
+            }
+
+        }
+
+
+		//forgot password
+		let form=document.getElementById("form");
+		let div=document.getElementById("but");
+		let forgot=document.getElementById("forgot");
+		let mine=document.createElement("div");
+		let noone=document.getElementById("logwith");
+		let mainform=document.getElementById("outerform")
+		let email=document.getElementById("email");
+		mine.innerHTML=`<div class="not_css" id="forgot1" >
+			<p><a href="login_form.html">log in with password</a></p>
+		</div>`;
+		
+
+		let password=document.getElementById("password");
+		let otp=document.createElement("div");
+		otp.innerHTML=`<input type="text" id="password" name="password" placeholder="OTP" required>`;
+		forgot.addEventListener("click",forgot_password);
+		function forgot_password(){
+			
+			if (email.value==""){
+				alert("first put your email and then click on forgot password");
+			}
+			else{
+				email.remove();
+				password.remove();
+				form.insertBefore(otp,div);
+				forgot.remove();
+				mainform.insertBefore(mine,noone);
+			}
+
+			
+
+
+
+		}
+		
+
+		let login_but=document.getElementById("login_but");
+		login_but.addEventListener('click',login);
+		
+
+		let users=["anupamjhabbl@gmail.com#@myaim1","jeevesh19@gmail.com@jeevesh","ayush20@gmail.com@ayush","harpreet21@harpreet"];
+		function login(e){
+			e.preventDefault();
+			console.log(window);
+			
+		    let password_login=document.getElementById("password").value;
+			console.log(password_login);
+			let email_login=document.getElementById("anupam_email").value;
+			console.log(email_login);
+
+			let added=email_login+password_login;
+			if (users.indexOf(added)== -1){
+				alert("Email or password is wrong");
+			}
+			else{
+				alert("successful login");
+				window.open("aboutmain.html");
+				
+				
+			}
+			
+			
+			
+
+
+		}
+		let eye=document.getElementById("eye");
+		eye.addEventListener("click",eye_open);
+		console.log(eye);
+		function eye_open(){
+			
+			let password_login=document.getElementById("password");
+			
+			console.log(eye.className);
+			if (eye.className=="fa fa-eye-slash"){
+				eye.className="fa fa-eye";
+				password.type="text";
+
+			}
+			else{
+				eye.className="fa fa-eye-slash";
+				password.type="password";
+
+			}
+		}
+		
+
+
+		
+
+    </script>
+		
+
+	
+
+	
+
+
+	
+</body>
+</html>

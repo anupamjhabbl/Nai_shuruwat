@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Logo For IWT 1 cropped.jpg">
+    <title>Nai Shuruwat-India</title>
+    <style>
+        img{
+            display:block;
+            width:700px;
+            margin:auto;
+            box-shadow:2px 2px 4px rgba(0, 0, 0, 0.877),-2px -2px 4px rgba(0, 0, 0, 0.411);;
+            border-radius:10px;
+
+            
+        }
+        body{
+            background-color: rgb(205, 225, 241);
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="body">
+        <img src="map2.jpg" alt="" usemap="#mymap">
+        <map name="mymap">
+            <area shape="circle" class="area"  id="jk" coords="222,55,13px" href="Jammu and Kashmir.html">
+            <area shape="circle"class="area"  coords="149,215,13px" href="Rajasthan.html">
+            <area shape="circle"class="area"  coords="253,325,15px" href="Madhya Pradesh.html">
+            <area shape="circle"class="area"  coords="243,120,15px" href="Himachal Pradesh.html">
+            <area shape="circle" class="area" coords="200,135,15px" href="Punjab.html">
+            <area shape="circle" class="area" coords="210,170,10px" href="Harayana.html">
+            <area shape="circle" class="area" coords="290,155,10px" href="Uttarakhand.html">
+            <area shape="circle" class="area" coords="240,180,13px" href="Delhi.html">
+            <area shape="circle" class="area" coords="320,235,13px" href="Uttar Pradesh.html">
+            <area shape="circle"class="area"  coords="122,325,14px" href="Gujarat.html">
+            <area shape="circle" class="area" coords="194,405,12px" href="Maharashtra.html">
+            <area shape="circle" class="area" coords="214,490,12px" href="Karnataka.html">
+            <area shape="circle" class="area" coords="228,596,12px" href="Kerala.html">
+            <area shape="circle" class="area" coords="274,570,12px" href="Tamil Nadu.html">
+            <area shape="circle" class="area" coords="283,496,13px" href="Andhra Pradesh.html">
+            <area shape="circle" class="area" coords="281,435,14px" href="Telangana.html">
+            <area shape="circle" class="area" coords="338,362,14px" href="Chhattisgarh.html">
+            <area shape="circle" class="area" coords="401,377,13px" href="Orissa.html">
+            <area shape="circle" class="area" coords="401,314,13px" href="Jharkhand.html">
+            <area shape="circle" class="area" coords="419,261,13px" href="Bihar.html">
+            <area shape="circle" class="area" coords="469,328,13px" href="West Bengal.html">
+            <area shape="circle" class="area" coords="472,215,13px" href="Sikkim.html">
+            <area shape="circle"class="area"  coords="535,309,12px" href="Tripura.html">
+            <area shape="circle" class="area" coords="538,240,12px" href="Assam.html">
+            <area shape="circle" class="area" coords="562,330,12px" href="Mizoram.html">
+            <area shape="circle" class="area" coords="575,288,12px" href="Manipur.html">
+            <area shape="circle" class="area" coords="598,257,14px" href="Nagaland.html">
+            <area shape="circle" class="area" coords="597,207,13px" href="Arunachal Pradesh.html">
+            <area shape="circle" class="area" coords="175,480,13px" href="Goa.html">
+            <area shape="circle" class="area" coords="512,258,13px" href="Meghalaya.html">
+        </map>
+
+    </div>
+    
+    <script>
+        let obj={
+            Rajasthan:"IMG-20211216-WA0000.jpg",
+            Punjab:"IMG-20211216-WA0002.jpg",
+            JammuandKashmir:"IMG-20211216-WA0003.jpg",
+            Harayana:"IMG-20211216-WA0001.jpg",
+        }
+
+
+
+
+        let area=document.querySelectorAll(".area");
+        area.forEach(item=>{
+            item.addEventListener("mouseover",universal);
+        });
+        area.forEach(item=>{
+            item.addEventListener("mouseout",funday);
+        });
+        function universal(e){
+            let str=e.target.getAttribute("href");
+            let n=str.indexOf(".html");
+            str=str.slice(0,n);
+            let array_state=str.split(" ");
+            let raw_str="";
+            for (statename of array_state){
+                raw_str=raw_str+statename;
+
+            }
+            str=raw_str;
+            console.log(str)
+            raw_str="";
+            for (statename of array_state){
+                raw_str=raw_str+statename+" ";
+
+            }
+            
+            fun(str,raw_str)
+        }
+        //let jk=document.getElementById("jk");
+        //jk.addEventListener("mouseover",fun);
+        //jk.addEventListener("mouseout",funday);
+        
+        function fun(str,raw_str){
+            
+            let ele=document.createElement("img");
+            let heading=document.createElement("h3");
+            heading.id="js_head"
+            heading.setAttribute("style","font-family:cursive;position:fixed;text-align:center;width:200px;background-color:black;color:white;height:40px;top:22px;right:71px")
+            heading.innerHTML=raw_str;
+            ele.setAttribute("src",`${str}.jpg`);
+            ele.setAttribute("style","position:fixed;width:300px;height:250px;top:110px;right:20px");
+            ele.id="image";
+            
+            console.log(ele);
+            let ele2=document.querySelector(".body");
+            ele2.appendChild(heading);
+            ele2.appendChild(ele);
+        }
+        function funday(){
+            let ele=document.getElementById("image");
+            ele.remove()
+            let heading=document.getElementById("js_head");
+            heading.remove()
+
+        }
+        
+    </script>
+
+</body>
+</html>

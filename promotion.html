@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Logo For IWT 1 cropped.jpg">
+    <title>Nai Shuruwat-Supporting NGOs</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: rgba(0, 255, 255, 0.123);
+        }
+        
+        .NGO:hover{
+            transform:scale(1.05);       /*this is causing that hovering effect*/
+            z-index: 1;
+            box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.562);
+        }
+
+        .NGO{
+            min-height:180px;
+            width: 90vw;
+            border:1px solid black;
+            transition: all 0.5s;
+            margin:auto ;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            background-color: rgb(46, 255, 255);
+            font-family:'Arapey', serif ;
+            font-size:21px;
+            font-weight:500;
+            padding-right:0px;
+            
+            
+        }
+
+        .image{
+            border: 1px solid rgb(255, 255, 255);
+            height: 20vh;
+            width: 12vw;
+            background-color: rgba(255, 166, 0, 0.404);
+
+            border-radius: 50%;
+        }
+
+        .image img{
+            border-radius: 50%;
+
+        }
+
+        .content{
+            border: 1px solid black;
+            
+            width: 80%;
+            background-color: white;
+            margin-right:-17px;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .NGO .content p{
+            margin-left: 10px;
+        }
+
+        .nav{
+            background-color: rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+                                           
+            width:100vw;
+            padding-left:30px;
+            padding-right:120px;
+            position:sticky;
+            box-sizing: border-box;
+        
+        }
+        .nav #nav{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+            flex-wrap: wrap;
+            margin:0px;
+            width:50vw;
+        }
+
+        .nav div #nav li a{
+            
+            text-decoration: none;
+            color: white;
+        }
+
+        #nav li{
+            display:inline-block;
+            padding:10px;
+            transition:all 0.5s;                     
+            font-size: 17px;
+            margin-top:15px;          
+            
+        }
+        #login{
+            margin-top:34px;
+        }
+
+        
+
+        #login:hover{
+              box-shadow: 1px 1px 3px 2px rgb(44, 43, 43);             
+              
+        }
+        
+        
+        .image img{
+            width:12vw;
+            height:20vh;
+            border-radius:50%;
+            margin-left:0px;
+            margin-top:0px;
+
+        }
+        .button {
+            position:relative;
+            bottom:10px;
+        }
+        .nav div #nav li a:hover{
+            color:rgb(255, 145, 2);
+            text-decoration: underline;
+            font-size:1.1em;
+            
+        }
+        
+
+        
+
+    
+
+    </style>
+</head>
+<body>
+    
+    
+    <main>
+        <nav class="nav" >
+            <div><!--logo image-->
+                <img src="Logo For IWT 1 cropped.jpg" style="height:60px;width:70px;border-radius: 50%;margin:10px">
+            </div>
+        
+            <div >
+            <ul id="nav" >
+                <li ><a  href="index.html">Home</a></li>
+                <li ><a href="aboutmain.html">About Us</a></li>
+                <li ><a href="World_Reach.html">Our Reach</a></li>
+                
+                <li ><a href="volunteer_form.html">Join Us</a></li>
+                <li ><a href="donate.html">Donate</a></li>
+                <li><a href="faq (2).html">Question</a></li>
+                <li ><a href="help.html">Help</a></li>
+            </ul>
+            </div>
+
+            <div class="button">
+                <button id="login" ><a href="login_form.html" style="text-decoration: none;">Log In</a></button>
+            </div>
+        </nav>
+        <h1 style="margin-left:30px;font-family:'Arapey', serif ;">Other NGOs Information</h1>
+        
+        <a href="https://ejfoundation.org/" target="_blank"><div class="NGO">
+            <div class="image">
+                <img src="environment justice.jpg" >
+            </div>
+            <div class= "content" >
+                <ul>
+                    <li>
+                        NAME :-  Environment Justice Foundation
+                    </li>
+                    <BR>
+                    <li>
+                        ADDRESS :-  EJF, Unit 417, Exmouth House 3/11 Pine Street, Farringdon, London, EC1R 0JH
+                    </li>
+                    <BR>
+                    <li>
+                        CONTACT :-  +44 20 7239 3310
+                    </li>
+                </ul>
+
+            </div>
+            
+        </div></a>
+        <br>
+        <br>
+
+        <a href="https://volcanofoundation.org/" target="_blank"><div class="NGO">
+            <div class="image">
+                <img src="volcano active.png" >
+             
+            </div>
+            <div class= "content" >
+                <ul>
+                    <li>
+                        NAME :-  Vocano Active foundation 
+                    </li>
+                    <BR>
+                    <li>
+                        ADDRESS :-  Vidhya Nagar Main Road, Near Virani Chowk, Bhakti Nagar, RAJKOT, Gujarat
+                    </li>
+                    <BR>
+                    <li>
+                        CONTACT :-  -------------------------
+                    </li>
+                </ul>
+
+            </div>
+            
+        </div></a>
+        <br>
+        <br>
+
+        <a href="https://business.facebook.com/sarvsahyogngo/?__xts__[0]=68.ardl8gyirybjgr" target="_blank"><div class="NGO">
+            <div class="image">
+                <img src="sarv sahyog.png">
+             
+            </div>
+            <div class= "content" >
+                <ul>
+                    <li>
+                        NAME :-  Sarv Sahyog NGO
+                    </li>
+                    <BR>
+                    <li>
+                        ADDRESS :- Atam Nagar, Ludhiana 
+                    </li>
+                    <BR>
+                    <li>
+                        CONTACT :-  -----------------
+                    </li>
+                </ul>
+
+            </div>
+            
+        </div></a>
+        <br>
+        <br>
+
+
+        <a href="http://www.aashayein.in/" target="_blank"><div class="NGO">
+            <div class="image">
+                <img src="aashayein.png" >
+             
+            </div>
+            <div class= "content" >
+                <ul>
+                    <li>
+                        NAME :- Aashayein 
+                    </li>
+                    <BR>
+                    <li>
+                        ADDRESS :- Gurudwara Road, Laxmi Nagar, Delhi 
+                    </li>
+                    <BR>
+                    <li>
+                        CONTACT :-  --------------------
+                    </li>
+                </ul>
+
+            </div>
+            
+        </div></a>
+        <br>
+        <br>
+
+        <a href="https://dmngo.org/" target="_blank"><div class="NGO">
+            <div class="image">
+                <img src="dream makers.png" >
+             
+            </div>
+            <div class= "content" >
+                <ul>
+                    <li>
+                        NAME :- Dream Makers NGO
+                    </li>
+                    <BR>
+                    <li>
+                        ADDRESS :- Civil Road Gohana, Sonipat, Haryana
+                    </li>
+                    <BR>
+                    <li>
+                        CONTACT :-  -----------------
+                    </li>
+                </ul>
+
+            </div>
+            
+        </div></a>
+        <br>
+        <br>
+
+        <a href="https://www.childlineindia.org/" target="_blank"><div class="NGO">
+            <div class="image">
+                <img src="child line (1).png" >
+             
+            </div>
+            <div class= "content" >
+                <ul>
+                    <li>
+                        NAME :-   Childline NGO
+                    </li>
+                    <BR>
+                    <li>
+                        ADDRESS :- Kachi Chawni, Jammu, Jammu&Kashmir  
+                    </li>
+                    <BR>
+                    <li>
+                        CONTACT :-  1098
+                    </li>
+                </ul>
+
+            </div>
+            
+        </div></a>
+        <br>
+        <br>
+
+        <a href="https://charis-singapore.org/" target="_blank"><div class="NGO">
+            <div class="image">
+                <img src="charis.png">
+             
+            </div>
+            <div class= "content" >
+                <ul>
+                    <li>
+                        NAME :-  Charis NGO
+                    </li>
+                    <BR>
+                    <li>
+                        ADDRESS :-  55 Waterloo Street Singapore
+                    </li>
+                    <BR>
+                    <li>
+                        CONTACT :-  +65 6337 4119
+                    </li>
+                </ul>
+
+            </div>
+        </div></a>
+            <br>
+            <br>
+    
+            <a href="https://fams.asn.au/" target="_blank"><div class="NGO">
+                <div class="image">
+                    <img src="fams.jpg" >
+                 
+                </div>
+                <div class= "content" >
+                    <ul>
+                        <li>
+                            NAME :- FAMS NGO 
+                        </li>
+                        <BR>
+                        <li>
+                            ADDRESS :- 52-58 William Street, Woolloomooloo, Sydney, Australia  
+                        </li>
+                        <BR>
+                        <li>
+                            CONTACT :- +61 2 8354 3799 
+                        </li>
+                    </ul>
+    
+                </div>
+                
+            </div></a>
+            <br>
+            <br>
+    
+            <a href="https://www.wake-upfoundation.org/" target="_blank"><div class="NGO">
+                <div class="image">
+                    <img src="wake up.jpg" >
+                 
+                </div>
+                <div class= "content" >
+                    <ul>
+                        <li>
+                            NAME :- Wake Up Foundation 
+                        </li>
+                        <BR>
+                        <li>
+                            ADDRESS :-  2251 Florin Road, Suite 139 
+                            Sacramento, CA, 95822 
+                        </li>
+                        <BR>
+                        <li>
+                            CONTACT :-   916 243 7076
+                        </li>
+                    </ul>
+    
+                </div>
+                
+            </div></a>
+            
+        </div></a>
+
+
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+
+    </script>
+    
+
+    
+</body>
+</html>
